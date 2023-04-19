@@ -16,10 +16,11 @@ import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import tl.cordova.google.mobile.vision.scanner.ui.camera.*;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -50,11 +51,8 @@ import java.io.IOException;
 // ----------------------------------------------------------------------------
 // |  Our Imports
 // ----------------------------------------------------------------------------
-import tl.cordova.google.mobile.vision.scanner.ui.camera.CameraSource2;
-import tl.cordova.google.mobile.vision.scanner.ui.camera.CameraSourcePreview;
-import tl.cordova.google.mobile.vision.scanner.ui.camera.GraphicOverlay;
 
-public final class BarcodeCaptureActivity extends    AppCompatActivity
+public final class BarcodeCaptureActivity extends AppCompatActivity
                                           implements BarcodeGraphicTracker.BarcodeUpdateListener {
   // ----------------------------------------------------------------------------
   // |  Public Properties
@@ -71,8 +69,8 @@ public final class BarcodeCaptureActivity extends    AppCompatActivity
   private static final int    RC_HANDLE_GMS         = 9001            ;
   private static final int    RC_HANDLE_CAMERA_PERM = 2               ;
 
-  private CameraSource2                  _CameraSource        ;
-  private CameraSourcePreview            _Preview             ;
+  private CameraSource2 _CameraSource        ;
+  private CameraSourcePreview _Preview             ;
   private GraphicOverlay<BarcodeGraphic> _GraphicOverlay      ;
   private ScaleGestureDetector           _ScaleGestureDetector;
   private GestureDetector                _GestureDetector     ;

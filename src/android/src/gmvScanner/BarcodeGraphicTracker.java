@@ -4,7 +4,7 @@ package tl.cordova.google.mobile.vision.scanner;
 // |  Android Imports
 // ----------------------------------------------------------------------------
 import android.content.Context;
-import android.support.annotation.UiThread;
+import androidx.annotation.UiThread;
 
 // ----------------------------------------------------------------------------
 // |  Google Imports

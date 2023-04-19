@@ -113,10 +113,9 @@
                        target="res/drawable/torch_inactive.xml"/>
 
 
-        <framework src="com.android.support:support-v4:27.1.0" />
+        <framework src="androidx.core:core:1.6.0" />
         <framework src="com.google.android.gms:play-services-vision:11.0.1" />
-        <framework src="com.android.support:design:27.1.0" />
+        <framework src="com.google.android.material:material:1.2.0-alpha02" />
             
-        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference"/>
     </platform>
 </plugin>
